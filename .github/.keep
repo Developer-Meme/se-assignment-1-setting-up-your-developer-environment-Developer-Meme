@@ -1,0 +1,113 @@
+Developer Environment Setup Documentation
+1. Select and Install Operating System
+Operating System: Ubuntu 24.04 LTS
+-Steps to Download and Install Ubuntu 24.04 LTS:
+    1.Download Ubuntu ISO:
+        -Visit the official Ubuntu download page.
+        -Select Ubuntu 24.04 LTS and download the ISO file.
+    2.Create a Bootable USB:
+        -Use a tool like Rufus (Windows) or Etcher (Linux/Mac) to create a bootable USB drive.
+        -Select the downloaded Ubuntu ISO file and the USB drive to create the bootable USB.
+    3.Install Ubuntu:
+        -Insert the bootable USB into your computer and restart.
+        -Boot from the USB drive (you may need to change the boot order in BIOS/UEFI settings).
+        -Follow the on-screen instructions to install Ubuntu 24.04 LTS.
+2. Install Visual Studio Code
+-Steps to Download and Install Visual Studio Code:
+    1.Download VS Code:
+        -Visit the Visual Studio Code download page.
+        -Select the .deb package for Linux.
+    2.Install VS Code:
+        -Open Terminal (Ctrl+Alt+T).
+        -Navigate to the download directory and run the following command:
+            sh
+            sudo apt install ./code_*.deb
+3. Set Up Version Control System
+-Install Git and Create a GitHub Account:
+    1.Install Git:
+        -Open Terminal and run:
+            sh
+            sudo apt update
+            sudo apt install git
+    2.Configure Git:
+        -Set your username and email:
+            sh
+            git config --global user.name "Developer_Meme"
+            git config --global user.email "victormax9154@gmail.com"
+    3.Create a GitHub Account:
+        -Visit GitHub and sign up for an account.
+-Initialize a Git Repository and Make Your First Commit:
+    1.Initialize Git Repository:
+        -Navigate to your project directory and run:
+            sh
+            git init
+    2.Create a README file and make the first commit:
+        -Create a README file:
+            sh
+            echo "# MyProject" >> README.md
+        -Stage and commit the changes:
+            sh
+            git add README.md
+            git commit -m "Initial commit"
+    3.Push to GitHub:
+        -Create a new repository on GitHub and follow the instructions to push your local repository to GitHub:
+            sh
+            git remote add origin https://github.com/Developer-Meme/dart-program.git
+git branch -M main
+git push -u origin main
+4. Install Necessary Programming Languages and Runtimes
+-Install Python:
+    ->Download and Install Python:
+        -Open Terminal and run:
+            sh
+            sudo apt update
+            sudo apt install python3 python3-pip
+5. Install Package Managers
+-Install pip for Python:
+    ->Ensure pip is installed:
+        Open Terminal and run:
+            sh
+            sudo apt install python3-pip
+6. Configure a Database (MySQL)
+-Download and Install MySQL:
+    1.Download MySQL:
+        -Visit the MySQL download page.
+    2.Install MySQL:
+        -Open Terminal and run:
+            sh
+            sudo apt update
+            sudo apt install mysql-server
+    3.Secure MySQL Installation:
+        -Run the security script:
+            sh
+            sudo mysql_secure_installation
+7. Set Up Development Environments and Virtualization
+-Using Docker:
+    1.Install Docker:
+        -Open Terminal and run:
+            sh
+            sudo apt update
+            sudo apt install docker.io
+            sudo systemctl start docker
+            sudo systemctl enable docker
+    2.Verify Docker Installation:
+        -Run:
+            sh
+            docker --version
+8. Explore Extensions and Plugins
+-Install Extensions for Visual Studio Code:
+    1.Open Extensions View:
+        -Press Ctrl+Shift+X to open the Extensions view.
+    2.Search and Install Extensions:
+        ->Search for and install the following extensions:
+            -Prettier - Code formatter
+            -ESLint
+            -Live Server
+            -Python
+            -GitLens
+9. Reflection on Challenges
+-Document the Challenges and Solutions:
+    1.Challenge: Installing MySQL and configuring secure installation.
+        -Solution: Following detailed documentation and troubleshooting common errors like incorrect root password issues.
+    2.Challenge: Ensuring all dependencies and tools are compatible with Ubuntu 24.04.
+        -Solution: Referencing official documentation and using package managers like apt for proper installations.
